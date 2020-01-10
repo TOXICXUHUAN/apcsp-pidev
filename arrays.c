@@ -14,6 +14,6 @@ int main()
 			arr[i] = arr[i] + n;
 			printf("%d\n", arr[i]);
 		}
-	arrayAdd(arr, 100, 5);
 	}
+arrayAdd(arr, 100, 5);
 }
