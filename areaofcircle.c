@@ -1,14 +1,20 @@
 #include <stdio.h>
-#include <math.h>
+	float arrayAdd(float* arr, int s, int n)
+	{
+		for (int i = 0; i <= s; i++)
+		{
+			arr[i] = arr[i] + n;
+			printf("%f\n", arr[i]);
+		}
+    return 0;
+  }
 int main()
 {
-	float areaOfCircle(float r)
-{
-		return 3.14*r*r;
-}
-	int i;
-	for (i=3.5; i<=12.5; i++)
-   {
-       printf("%f\n", areaOfCircle(i));
-   }
+	float arr[100];
+	for (int i = 0; i <= 100; i++)
+	{
+		arr[i] = i * i;
+	}
+
+arrayAdd(arr, 100, 5);
 }
